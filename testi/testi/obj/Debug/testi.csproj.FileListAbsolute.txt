@@ -1,0 +1,10 @@
+C:\Users\juhel\source\repos\testi\testi\obj\Debug\testi.csprojAssemblyReference.cache
+C:\Users\juhel\source\repos\testi\testi\obj\Debug\testi.Form1.resources
+C:\Users\juhel\source\repos\testi\testi\obj\Debug\testi.Properties.Resources.resources
+C:\Users\juhel\source\repos\testi\testi\obj\Debug\testi.csproj.GenerateResource.cache
+C:\Users\juhel\source\repos\testi\testi\obj\Debug\testi.csproj.CoreCompileInputs.cache
+C:\Users\juhel\source\repos\testi\testi\bin\Debug\testi.exe.config
+C:\Users\juhel\source\repos\testi\testi\bin\Debug\testi.exe
+C:\Users\juhel\source\repos\testi\testi\bin\Debug\testi.pdb
+C:\Users\juhel\source\repos\testi\testi\obj\Debug\testi.exe
+C:\Users\juhel\source\repos\testi\testi\obj\Debug\testi.pdb

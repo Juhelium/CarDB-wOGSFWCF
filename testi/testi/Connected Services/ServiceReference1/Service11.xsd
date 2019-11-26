@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/uyjk" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/uyjk" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="CompositeType">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="CompositeType" nillable="true" type="tns:CompositeType" />
+  <xs:complexType name="Auto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Color" type="xs:int" />
+      <xs:element minOccurs="0" name="Fuel" type="xs:int" />
+      <xs:element minOccurs="0" name="Hinta" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Malli" type="xs:int" />
+      <xs:element minOccurs="0" name="Merkki" type="xs:int" />
+      <xs:element minOccurs="0" name="Mittarilukema" type="xs:int" />
+      <xs:element minOccurs="0" name="Mottoritila" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Pvm" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Auto" nillable="true" type="tns:Auto" />
+  <xs:complexType name="ArrayOfMerkki">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Merkki" nillable="true" type="tns:Merkki" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMerkki" nillable="true" type="tns:ArrayOfMerkki" />
+  <xs:complexType name="Merkki">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Valmistaja" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Merkki" nillable="true" type="tns:Merkki" />
+  <xs:complexType name="ArrayOfMalli">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Malli" nillable="true" type="tns:Malli" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMalli" nillable="true" type="tns:ArrayOfMalli" />
+  <xs:complexType name="Malli">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="MalliId" type="xs:int" />
+      <xs:element minOccurs="0" name="Malliname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MerkkiId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Malli" nillable="true" type="tns:Malli" />
+  <xs:complexType name="ArrayOfpolttoaine">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="polttoaine" nillable="true" type="tns:polttoaine" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpolttoaine" nillable="true" type="tns:ArrayOfpolttoaine" />
+  <xs:complexType name="polttoaine">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FuelId" type="xs:int" />
+      <xs:element minOccurs="0" name="FuelName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="polttoaine" nillable="true" type="tns:polttoaine" />
+  <xs:complexType name="ArrayOfvari">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="vari" nillable="true" type="tns:vari" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfvari" nillable="true" type="tns:ArrayOfvari" />
+  <xs:complexType name="vari">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ColorId" type="xs:int" />
+      <xs:element minOccurs="0" name="ColorName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="vari" nillable="true" type="tns:vari" />
+</xs:schema>
